@@ -27,6 +27,7 @@ services:
 
   mi-nginx:
     image: nginx
+    container_name: mi-nginx
     ports:
       - 8080:80
     networks:
