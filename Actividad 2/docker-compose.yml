@@ -36,11 +36,13 @@ services:
 
 networks:
   mongo-node-net:
+    container_name: mongo-node-net
     ipam:
       driver:  default
       config:
         - subnet: 172.40.0.0/16
   node-nginx-net:
+    container_name: node-nginx-net
     ipam:
       driver:  default
       config:
